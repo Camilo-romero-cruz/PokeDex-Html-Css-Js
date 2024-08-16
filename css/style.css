@@ -38,36 +38,36 @@ body {
     --sombra: #29292c;
 }
 
-.contenedor-nav {
+.header-nav {
     display: flex;
     align-items: center;
     margin: 0;
 }
 
-.contenedor-pokeball {
+.pokeball-container {
     display: flex;
     align-items: center;
 }
 
-.img-pokeball {
+.pokeball-image {
     width: 75px;
     height: 75px;
 }
 
-.titulo {
+.page-title {
     font-size: 38px;
     color: white;
     margin: 0 1% 0 0;
 }
 
-.contenedor-busqueda {
+.search-container {
     display: flex;
     align-items: center;
     gap: 5px;
     width: 100%;
 }
 
-.barra-busqueda {
+.search-bar {
     flex: 0 0 86%;
     padding: 8px;
     border-radius: 20px;
@@ -78,7 +78,7 @@ body {
     font-weight: bold;
 }
 
-.boton-busqueda {
+.search-button {
     padding: 4px 28px;
     border-radius: 20px;
     background-color: #ffffff;
@@ -89,11 +89,11 @@ body {
     font-size: 25px;
 }
 
-.boton-busqueda:hover {
+.search-button:hover {
     background-color: #e06600;
 }
 
-.rectangulo-redondeado {
+.rounded-rectangle {
     width: 386px;
     height: 510px;
     background-color: #ffffff;
@@ -105,7 +105,7 @@ body {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.contenedor-superior {
+.pokemon-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,48 +114,44 @@ body {
     border-radius: 200px 200px 0 0;
 }
 
-.img-pokemon {
+.pokemon-image {
     max-width: 65%;
     object-fit: contain;
 }
 
-.seccion-medio {
+.top-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     max-height: 10%;
-    background-color: #0050ac;
 }
 
-.seccion-medio-inferior {
+.middle-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     max-height: 20%;
-    background-color: #3fac00;
 }
 
-.seccion-inferior-medio {
+.lower-middle-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     max-height: 5%;
-    background-color: #b31313;
 }
 
-.seccion-inferior {
+.bottom-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     max-height: 25%;
-    background-color: #751756;
 }
 
-.contenedor-informacion {
+.info-container {
     width: 1000px;
     height: 507px;
     position: fixed;
@@ -167,65 +163,69 @@ body {
     flex-direction: column;
 }
 
-.contenedor-info-superior {
+.info-header {
     background-color: #363636;
     height: 50px;
     border-radius: 40px 0 0 0;
 }
 
-.contenedor-info-medio {
+.info-main {
     background-color: #1b1b1b;
     flex: 1;
-    background-color: #1b1b1b;
-    display: flex;
-    flex-direction: row; /* Asegura que los elementos se alineen en una fila */
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-}
-.contenedor-info-medio-interior-inicial{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 20%;
- 
-}
-.contenedor-info-medio-interior-intermedio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 10%;   
-}
-.contenedor-info-medio-interior-final{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 70%;   
-}
-.contenedor-info-medio-inferior {
-    background-color: #1b1b1b;
-    flex: 1;
-    background-color: #1b1b1b;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.contenedor-info-medio-inferior-interior-superior {
+
+.info-main-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 35%;
+}
+
+.info-main-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 5%;   
+}
+
+.info-main-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60%;   
+}
+
+.info-bottom {
+    background-color: #1b1b1b;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info-bottom-top {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 50%;   
 }
-.contenedor-info-medio-inferior-interior-inferior {
+
+.info-bottom-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 50%;   
 }
-.contenedor-info-inferior {
+
+.info-footer {
     background-color: #1b1b1b;
     height: 75px;
     border-radius: 0 0 0 40px;
