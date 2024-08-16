@@ -50,12 +50,12 @@ body {
 }
 
 .pokeball-image {
-    width: 75px;
-    height: 75px;
+    width: 5vw;
+    height: 5vw;
 }
 
 .page-title {
-    font-size: 38px;
+    font-size: 2.5vw;
     color: white;
     margin: 0 1% 0 0;
 }
@@ -63,30 +63,30 @@ body {
 .search-container {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.5vw;
     width: 100%;
 }
 
 .search-bar {
     flex: 0 0 86%;
-    padding: 8px;
-    border-radius: 20px;
-    border: 1px solid black;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    border: 0.1vw solid black;
     background-color: black;
-    font-size: 100%;
+    font-size: 1rem;
     color: white;
     font-weight: bold;
 }
 
 .search-button {
-    padding: 4px 28px;
-    border-radius: 20px;
+    padding: 0.5vw 2vw;
+    border-radius: 2vw;
     background-color: #ffffff;
     color: black;
     cursor: pointer;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 25px;
+    border: 0.1vw solid black;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+    font-size: 1.5vw;
 }
 
 .search-button:hover {
@@ -94,28 +94,28 @@ body {
 }
 
 .rounded-rectangle {
-    width: 386px;
-    height: 510px;
+    width: 27vw;
+    height: 82vh;
     background-color: #ffffff;
-    border-radius: 200px 200px 0 0;
+    border-radius: 15vw 15vw 0 0;
     position: fixed;
     bottom: 0;
     left: 0;
-    padding: 10px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1vw;
+    box-shadow: 0 -0.5vw 1vw rgba(0, 0, 0, 0.2);
 }
 
 .pokemon-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50%;
     max-height: 50%;
-    border-radius: 200px 200px 0 0;
+    border-radius: 15vw 15vw 0 0;
 }
 
 .pokemon-image {
-    max-width: 80%;
+    max-width: 100%;
     object-fit: contain;
 }
 
@@ -123,7 +123,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 10%;
     max-height: 10%;
 }
 
@@ -131,35 +131,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 10%;
     max-height: 10%;
 }
 
 .bottom-section {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: flex-start; /* Alinea al inicio (parte superior) verticalmente */
-    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    height: 30%;
     max-height: 30%;
 }
 
-
 .info-container {
-    width: 1000px;
-    height: 507px;
+    width: 70vw;
+    height: 87vh;
     position: fixed;
-    bottom: 4px;
-    left: 420px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 40px 0 0 40px;
+    bottom: 0.5vh;
+    left: 30vw;
+    box-shadow: 0 -0.5vw 1vw rgba(0, 0, 0, 0.2);
+    border-radius: 3vw 0 0 3vw;
     display: flex;
     flex-direction: column;
 }
 
 .info-header {
     background-color: #363636;
-    height: 50px;
-    border-radius: 40px 0 0 0;
+    height: 7vh;
+    border-radius: 3vw 0 0 0;
 }
 
 .info-main {
@@ -174,7 +173,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 35%;
     max-width: 35%;
 }
 
@@ -182,16 +181,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 5%;   
+    width: 5%;
+    max-width: 5%;
 }
 
 .info-main-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 60%;   
+    width: 60%;
+    max-width: 60%;
 }
 
 .info-bottom {
@@ -206,45 +205,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 50%;   
+    width: 50%;
+    max-width: 50%;
 }
 
 .info-bottom-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 50%;   
+    width: 50%;
+    max-width: 50%;
 }
 
 .info-footer {
     background-color: #1b1b1b;
-    height: 75px;
-    border-radius: 0 0 0 40px;
+    height: 10vh;
+    border-radius: 0 0 0 3vw;
 }
+
 .middle-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Espacio entre los botones */
-    margin-top: 5px; /* Espacio superior para el contenedor */
+    gap: 1vw;
+    margin-top: 1vh;
 }
 
 .boton-pildora {
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 1vh 2vw;
+    border-radius: 2vw;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     text-transform: uppercase;
 }
 
 .boton-grass {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50;
 }
 
 .boton-poison {
-    background-color: #9B59B6; /* Morado */
+    background-color: #9B59B6;
 }
