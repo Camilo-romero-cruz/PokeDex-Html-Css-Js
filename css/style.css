@@ -110,12 +110,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    max-height: 40%;
+    max-height: 50%;
     border-radius: 200px 200px 0 0;
 }
 
 .pokemon-image {
-    max-width: 65%;
+    max-width: 80%;
     object-fit: contain;
 }
 
@@ -125,14 +125,6 @@ body {
     align-items: center;
     height: 100%;
     max-height: 10%;
-}
-
-.middle-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    max-height: 15%;
 }
 
 .lower-middle-section {
@@ -145,11 +137,12 @@ body {
 
 .bottom-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea al inicio (parte superior) verticalmente */
     height: 100%;
-    max-height: 25%;
+    max-height: 30%;
 }
+
 
 .info-container {
     width: 1000px;
@@ -230,4 +223,28 @@ body {
     height: 75px;
     border-radius: 0 0 0 40px;
 }
+.middle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 5px; /* Espacio superior para el contenedor */
+}
 
+.boton-pildora {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.boton-grass {
+    background-color: #4CAF50; /* Verde */
+}
+
+.boton-poison {
+    background-color: #9B59B6; /* Morado */
+}
