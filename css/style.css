@@ -159,6 +159,9 @@ body {
     background-color: #363636;
     height: 7vh;
     border-radius: 3vw 0 0 0;
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
 }
 
 .info-main {
@@ -248,3 +251,39 @@ body {
 .boton-poison {
     background-color: #9B59B6;
 }
+.pill-button {
+    background-color: hsl(0, 0%, 86%); /* Color de fondo naranja */
+    color: #292929; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 1vh 3vh;
+    font-size: 2.5vh; /* Tamaño de fuente consistente */
+    cursor: pointer; /* Cursor en forma de mano al pasar el ratón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    margin: 1vh; /* Espaciado entre botones */
+  }
+  
+  .pill-button:hover {
+    background-color: #e06600; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+  }
+  
+  .pill-button:focus {
+    outline: none; /* Eliminar el borde de enfoque */
+  }
+  .arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
