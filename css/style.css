@@ -4,7 +4,6 @@ html,
 body {
     height: 100%;
     font-family: 'Rubik', sans-serif;
-    /* Añadido aquí */
 }
 
 body {
@@ -21,7 +20,7 @@ body {
     --planta: #33a165;
     --acero: #00858a;
     --agua: #0050ac;
-    --psíquico: #c90086;
+    --psiquico: #c90086;
     --tierra: #8b4513;
     --hielo: #70deff;
     --volador: #5d4e75;
@@ -32,13 +31,11 @@ body {
     --lucha: #634136;
     --siniestro: #272625;
     --bicho: #7a8825;
-    --dragón: #00c431;
-    --eléctrico: #bba909;
+    --dragon: #00c431;
+    --electrico: #bba909;
     --hada: #d31c81;
     --desconocido: #757575;
-    /* desconocido */
     --sombra: #29292c;
-    /* sombra */
 }
 
 .contenedor-nav {
@@ -47,12 +44,12 @@ body {
     margin: 0;
 }
 
-.contenedor-pokeball-blanco {
+.contenedor-pokeball {
     display: flex;
     align-items: center;
 }
 
-.img-pokeball-filtro {
+.img-pokeball {
     width: 75px;
     height: 75px;
 }
@@ -60,23 +57,18 @@ body {
 .titulo {
     font-size: 38px;
     color: white;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-right: 1%;
+    margin: 0 1% 0 0;
 }
 
 .contenedor-busqueda {
     display: flex;
     align-items: center;
     gap: 5px;
-    /* Espacio entre la barra de búsqueda y el botón */
     width: 100%;
-    /* Asegura que el contenedor ocupe el 100% del ancho disponible */
 }
 
 .barra-busqueda {
     flex: 0 0 86%;
-    /* Ocupa el 90% del ancho del contenedor */
     padding: 8px;
     border-radius: 20px;
     border: 1px solid black;
@@ -99,28 +91,68 @@ body {
 
 .boton-busqueda:hover {
     background-color: #e06600;
-    /* Cambia el color al pasar el ratón */
 }
 
 .rectangulo-redondeado {
-    /* Ancho del contenedor */
     width: 386px;
-    /* Alto del contenedor */
     height: 510px;
-    /* Color de fondo del contenedor */
     background-color: #ffffff;
-    /* Bordes redondeados: solo en la parte superior (esquinas superiores) */
     border-radius: 200px 200px 0 0;
-    /* Posicionamiento fijo en la parte inferior de la pantalla */
     position: fixed;
-    /* Alineación horizontal a la izquierda */
     bottom: 0;
-    /* Alineación vertical a la izquierda */
     left: 0;
-    /* Espaciado interno del contenedor */
     padding: 10px;
-    /* Sombra para un efecto de elevación (sombra hacia arriba) */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 40%;
+    border-radius: 200px 200px 0 0;
+}
+
+.img-pokemon {
+    max-width: 65%;
+    object-fit: contain;
+}
+
+.seccion-medio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 10%;
+    background-color: #0050ac;
+}
+
+.seccion-medio-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 20%;
+    background-color: #3fac00;
+}
+
+.seccion-inferior-medio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 5%;
+    background-color: #b31313;
+}
+
+.seccion-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 25%;
+    background-color: #751756;
 }
 
 .contenedor-informacion {
@@ -135,34 +167,67 @@ body {
     flex-direction: column;
 }
 
-.contenedor-superior {
+.contenedor-info-superior {
     background-color: #363636;
     height: 50px;
-    /* Ajusta la altura como desees */
     border-radius: 40px 0 0 0;
 }
 
-.contenedor-medio {
+.contenedor-info-medio {
     background-color: #1b1b1b;
     flex: 1;
-    /* Ocupa el espacio restante */
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos se alineen en una fila */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
 }
-
-.contenedor-inferior {
-    background-color: #1f1f1f;
+.contenedor-info-medio-interior-inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 20%;
+ 
+}
+.contenedor-info-medio-interior-intermedio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 10%;   
+}
+.contenedor-info-medio-interior-final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 70%;   
+}
+.contenedor-info-medio-inferior {
+    background-color: #1b1b1b;
     flex: 1;
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
-
-.contenedor-inferiorr {
-    background-color: #363636;
+.contenedor-info-medio-inferior-interior-superior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 50%;   
+}
+.contenedor-info-medio-inferior-interior-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 50%;   
+}
+.contenedor-info-inferior {
+    background-color: #1b1b1b;
     height: 75px;
-    /* Ajusta la altura como desees */
     border-radius: 0 0 0 40px;
 }
 
-.img-pokemon{
-    max-width: 100%;
-    max-height: 70%;
-    object-fit: contain; /* Ajusta la imagen dentro del div */
-
-}
