@@ -7,6 +7,9 @@
     <title>Pokédex</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Agrega estilos aquí si es necesario */
+    </style>
 </head>
 
 <body>
@@ -27,17 +30,21 @@
             <div class="pokemon-image-container">
                 <img class="pokemon-image" src="css/images/1.png" alt="Pokémon 001">
             </div>
-            <div class="top-section"><p style="font-size: 4vh; margin-top: 7vh;">No.001 Bulbasaur</p></div>
+            <div class="top-section">
+                <p style="font-size: 32px; margin: 0; margin-top: 20px;">Bulbasaur</p>
+                <p style="font-size: 16px; margin: 0;">No.001</p>
+            </div>
             <div class="middle-section">
-                <button class="boton-pildora boton-grass" style="font-size: 2vh;">Grass</button>
-                <button class="boton-pildora boton-poison" style="font-size: 2vh;">Poison</button>
+                <button class="boton-pildora boton-grass" style="font-size: 16px;">Grass</button>
+                <button class="boton-pildora boton-poison" style="font-size: 16px;">Poison</button>
             </div>
             <div class="lower-middle-section">
-                <p style="margin:2vh; font-size: 3vh">Height: 0.7m</p>
-                <p style="margin:2vh; font-size: 3vh">Weight: 6.9kg</p>
+                <p style="margin: 16px; font-size: 24px;">Height: 0.7m</p>
+                <p style="margin: 16px; font-size: 24px;">Weight: 6.9kg</p>
             </div>
-            <div class="bottom-section" style="margin:0.1vh; font-size: 3vh">
-                <p>While it is young, it uses the nutrients that are stored in the seed on its back in order to grow.</p>
+            <div class="bottom-section" style="margin: 8px; font-size: 24px;">
+                <p>While it is young, it uses the nutrients that are stored in the seed on its back in order to grow.
+                </p>
             </div>
         </div>
         <div class="info-container">
@@ -47,9 +54,64 @@
                 <button class="pill-button">Encounters</button>
             </div>
             <div class="info-main">
-                <div class="info-main-left"></div>
-                <div class="info-main-center"></div>
-                <div class="info-main-right"></div>
+                <div class="info-main-left">
+                    <table>
+                        <tr>
+                            <td>HP</td>
+                        </tr>
+                        <tr>
+                            <td>Attack</td>
+                        </tr>
+                        <tr>
+                            <td>Defense</td>
+                        </tr>
+                        <tr>
+                            <td>Sp. ATK</td>
+                        </tr>
+                        <tr>
+                            <td>Sp. Def</td>
+                        </tr>
+                        <tr>
+                            <td>Speed</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info-main-center">
+                    <table>
+                        <tr>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info-main-right">
+
+                    <div class="bar-container">
+                        <div class="bar" style="width: 55%;"></div>
+                        <div class="bar" style="width: 46%;"></div>
+                        <div class="bar" style="width: 46%;"></div>
+                        <div class="bar" style="width: 33%;"></div>
+                        <div class="bar" style="width: 44%;"></div>
+                        <div class="bar" style="width: 34%;"></div>
+                    </div>
+
+
+
+                </div>
             </div>
             <div class="info-bottom">
                 <div class="info-bottom-top"></div>
